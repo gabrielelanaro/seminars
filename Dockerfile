@@ -7,6 +7,7 @@ USER root
 USER main
 
 RUN conda remove -y numba
+RUN conda install notebook=4.1
 # Install cclib
 RUN /home/main/anaconda2/bin/pip install cclib
 # Install chemview
